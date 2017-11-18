@@ -1,0 +1,15 @@
+<br>
+<br>
+<h2><i class="fa fa-list"></i>Displaying List of Participants and Volunteers</h2>
+{{title}}
+<ul>
+    <li *ngFor="let student of students">{{student}}
+    
+    
+    </li>
+    
+ <input #newStudent type="text" value="{{valueOfStudent}} "/>
+ <button (click)="saveStudent(newStudent.value)" value="{{valueOfStudent}}">Add Participant</button>
+    
+    
+</ul>
